@@ -1,0 +1,394 @@
+<html>
+<head>
+<link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.css>
+<link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/night.min.css>
+<link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/css/zenburn.css>
+</head>
+<body>
+<div class=reveal>
+<div class=slides>
+<!-- START -->
+
+<style>
+li {list-style:none;}
+</style>
+
+
+<section>
+  <h1>VanillaJS</h1>
+  <h2>Capabilities &amp; Trajectory 🚀</h2>
+</section>
+
+<section>
+  <h2><a href=https://twitter.com/brianleroux>@brianleroux</a></h2>
+  <h3>Webmaster, <a href=https//begin.com>begin.com</a></h3>
+</section>
+
+<section>
+  <li class=fragment>wtfjs.com</li>
+  <li class=fragment>Adobe PhoneGap</li>
+  <li class=fragment>Apache Cordova</li>
+</section>
+<section>
+  🔥🔥🔥 <a href=https://arc.codes>arc.codes</a> 🔥🔥🔥
+</section>
+
+<section>
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">For your next big project consider Vanilla JS in 2018!!!!<br><br>✔️ Blazing fast <br>✔️ Zero config<br>✔️ Per file code splitting<br><br>💓💯🔥</p>&mdash; xnoɹǝʃ uɐıɹq 💎 (@brianleroux) <a href="https://twitter.com/brianleroux/status/1001453133074059264?ref_src=twsrc%5Etfw">May 29, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section>
+
+<section>
+  <h1>Vanilla.. wait</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rog8ou-ZepE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</section>
+
+<section>
+  <h1>IT'S JUST JS!</h1> 
+</section>
+
+<section>
+  <h2>Bad feels</h2>
+  <li class=fragment>Bundles are big
+  <li class=fragment>Mobile devices have limited resources 
+</section>
+
+<section>
+  <h2>Good feels</h2>
+  <li class=fragment>Unimaginable reuse: we got our shit together!
+  <li class=fragment>Developer velocity improved
+  <li class=fragment>Explosion of new tools, languages, techniques and ideas
+</section>
+
+<section>
+  <h1>Primitives over Frameworks</h1>
+</section>
+<section>
+A brief history of JS modules
+</section>
+
+<section>
+  <pre class=javascript>
+  <code>
+  // anarchy, basically
+  window.MyApp = {}
+  </code>
+  </pre>
+</section>
+
+<section>
+  <h3>Vigilante Justice</h3>
+  <img src=https://media.giphy.com/media/yznbdCVZpu7ni/giphy.gif><br>
+</section>
+
+<section>
+  <h3>AMD</h3>
+  <pre class=javascript>
+  <code>
+  define(function() {
+    // this is an amd module
+  }) 
+  </code>
+  </pre>
+  <a href=https://requirejs.org>RequireJS</a>
+</section>
+<section>
+  <h3>CJS</h3>
+  <pre class=javascript>
+  <code>
+  module.exports = function() {
+    // this is a commonjs module 
+  }
+  </code>
+  </pre>
+</section>
+
+<section>
+  <h3>Suddenly!</h3>
+  <li class=fragment>v8 happens
+  <li class=fragment>nodejs happens
+  <li class=fragment>coffeescript happens
+</section>
+
+<section>
+  And the transpiler is born
+</section>
+
+<section>CoffeeScript</section>
+<section>CoffeeScript II: The Wrath of Khan</section>
+<section>Coco</section>
+<section>LiveScript</section>
+<section>IcedCoffeeScript</section>
+<section><h1>🤦‍♀️ </h1></section>
+<section>Uberscript</section>
+<section>Toffeecript</section>
+<section>Caffeine</section>
+<section>Dart</section>
+<section>TypeScript</section>
+<section>Elm</section>
+<section>PureScript</section>
+<section>Flow</section>
+<section>Objective J</section>
+<section>JSX</section>
+<section>ClojureScript</section>
+<section>🎃 PumpkinSpiceCafféLatteScript</section>
+<section><img src=https://media.giphy.com/media/3d2wgrPNcBqocFzFbJ/giphy.gif></section>
+<section>
+  babel
+</section>
+
+<section>
+Thing I am NOT saying: transpilation is bad
+</section>
+
+<section>
+  <h2>Good feels</h2>
+  <li>Terseness
+  <li>Experimental features get rigorous validation
+  <li>Static analysis superpowers
+</section>
+
+<section>
+Thing I AM saying: choosing to transpile is opting into breaking changes.
+</section>
+
+
+<section>
+  <h1>Tradeoffs</h1>
+</section>
+<section>Words are Important</section>
+<section  data-transition=zoom>
+  <h3>Other words for "Tradeoffs"</h3>
+  <li class=fragment>Constraints
+  <li class=fragment><i>Limitations</i>
+</section>
+<section><h1>Limitations</h1></section>
+<section>
+  <h1>Limitations</h1>
+  <span style=color:grey;>Perf due to payload sizes</span><br>
+  <span style=color:red;>x</span> Startup and runtime performance
+</section>
+<section>
+  <h1>Limitations</h1>
+  <span style=color:grey;>   Line numbers</span><br>
+  <span style=color:red;>x</span> Time to bug resolution 
+</section>
+<section>
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">debugging transpiled code <a href="https://t.co/2SYDLaSAvq">pic.twitter.com/2SYDLaSAvq</a></p>&mdash; xnoɹǝʃ uɐıɹq 💎 (@brianleroux) <a href="https://twitter.com/brianleroux/status/1028383971229425665?ref_src=twsrc%5Etfw">August 11, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section>
+<section>
+  <h1>Limitations</h1>
+  <span style=color:grey;>🚨 Breaking changes and ecosystem thrash</span><br>
+  <span style=color:red;>x</span> Work you did not plan for
+</section>
+
+<section>
+  <h1>Change comes in two flavors</h1>
+  <li class=fragment>adding things (additive change)
+  <li class=fragment>removing things (breaking change)
+</section>
+<section>
+  Adding things is good
+</section>
+<section>
+  Removing things <i>is incredibly satisfying</i>
+</section>
+<section>
+  <h3><pre style=color:red;>TypeError: undefined is not a function</pre></h3>
+</section>
+<section>
+  Only remove after 💯% certain there are no references!
+</section>
+<section>
+  <h3>
+Breaking changes to JS are extremely rare because browsers that break lose adoption. *
+  </h3>
+<small> * But we do have a long history of browsers forcing adoption of _additive features_ by implementing/inventing their own speical browser specific non-standard things..</small>
+</section>
+
+<section>
+  <h2>Standards are very important because non-standard things tend to go away.</h2>
+  <a href=https://www.apple.com/hotnews/thoughts-on-flash/>Thoughts on Flash by Steve Jobs</a>
+</section>
+
+<section>Specs <b>are not</b> standards</section>
+<section>CommonJS is absolutely a defacto standard for Node modules today.</section>
+<section>
+  <small>Ask yourself:</small>
+  <h3>Is JSX also not a defacto standard?</h3>
+  <small>Because as an industry we certainly treat it like one!</small>
+</section>
+<section>
+  <h3>Regardless, browser <i>implementations</i> are incredibly stable runtimes.</h3>
+</section>
+
+<section>
+  <h2>Opting out of breaking change has beneficial properties</h2>
+</section>
+
+<section>
+  <h1>Speed.</h1> 
+  <li class=fragment>Authortime will be faster
+  <li class=fragment>Runtime smaller due to less deps
+  <li class=fragment>Bug resolution easier
+</section>
+
+<section>
+  <h3>Faster...reading, writing, running and fixing code! 🙇🏽‍♂️</h3>
+  <small>Seems worth exploring.</small>
+</section>
+
+<section>How tho?</section>
+
+<section>
+  <h2>Evergreen Browsers</h2>
+  <li>esmodules
+  <li>fetch
+  <li>components (well.. almost)
+</section>
+
+<section>
+  <pre>
+  <code class=html>
+  &lt;!-- entry file.. --&gt;
+  &lt;script type=module src=/js/index.mjs&gt;&lt;/script&gt;
+  </code>
+  </pre>
+</section>
+
+<section>
+  <pre><code class=javascript>
+  /* /js/index.mjs */
+  import api from '/js/api.mjs'
+  import main from '/js/main.mjs'
+  import menu from '/js/menu-toggle.mjs'
+
+  api.initialize()
+  main.initialize()
+  menu.initialize()
+  </code>
+  </pre>
+</section>
+
+<section>
+  <pre><code class=javascript>
+  /* /js/menu-toggle.mjs */
+  /* global document */
+  var open = document.getElementById('menu-open')
+  var close = document.getElementById('menu-close')
+  var main = document.querySelector('.main')
+  
+  export default function MenuToggle () {
+    function toggle (e) {
+      e.preventDefault()
+      main.classList.toggle('slide-menu')
+    }
+
+    if (open) {
+      open.onclick = toggle
+    }
+
+    if (close) {
+      close.onclick = toggle
+    }
+  }
+  </code>
+  </pre>
+</section>
+<section>
+  <pre><code class=javascript>
+  /* /js/close-button.mjs */
+  import {h} from 'https://unpkg.com/preact@8.2.9/dist/preact.esm.js?module'
+  import Icon from '/js/icon.mjs'
+  import joinClasses from '/js/join-classes.mjs'
+
+  export default function CloseButton(props={}) {
+    let noop = e=&gt; {}
+    let class = joinClasses('cu-pointer p-2 bg-p0', props.class)
+    let onclick = props.onclick || noop
+    let attr = {class, onclick}
+    let children = h(Icon, {class:'icon', href:'close'})
+    return h('button', attributes, children)
+  }
+  </code>
+  </pre>
+</section>
+
+<section>The amount of vanilla is up to you!</section>
+<section><h1>Layers</h1>Slowly making <i>additive change</i> means you can enjoy the benefits of both on a case by case basis.</section>
+
+<section>
+  <h1>⚠️ Caution</h1>
+<li>Node interop story still early
+<li>IE 11 does not support
+</section>
+
+<section>
+  <h3>Module bundling/min/split <b>may not</b> be <i>immediately</i> neccessary.</h3>
+  <small>Eventually apps grow; and <b>that could be the time</b> remediate bloat.</small>
+</section>
+<section><h3>Solve the problems you have.</h3><small>Not the ones you want.</small></section>
+<section>
+  <h2>VIEW SOURCE IS BACK 💓!</h3>
+  <a href=https://begin.com/>begin.com</a>
+</section>
+
+
+
+<section>
+Mastery of plain JavaScript is timeless. 
+</section>
+
+<section>
+  <h3>Solve with patience. </h3>
+<small>Wait for features to be unflagged in the browser.</small>
+</section>
+
+<section>
+<h1>Choose fast by default.</h1>
+<small>Less code is faster on all dimensions: reading, writing, and running.</small>
+</section>
+
+<section>
+  <h3>Lets be excellent to eachother.</h3>
+  <small>No more code shaming! There is no singular "right" way.</small>
+</section>
+
+<section>
+  <h3>It's just JS.</h3>
+</section>
+
+<section>
+  <h1> thx eh!</h1> 
+  <small> <a href=https://twitter.com/brianleroux>@brianleroux</a></small><br>
+  <small> <a href=https://begin.com>begin.com</a></small>
+<section>
+
+
+
+
+
+
+
+
+
+
+<!-- END -->
+</div>
+</div>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.js></script>
+<script>
+Reveal.initialize({
+  history: true,
+  dependencies: [{ 
+    src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/highlight/highlight.js', 
+    async: true, 
+    callback: function() { hljs.initHighlightingOnLoad() } 
+  }]
+})
+</script>
+</body>
+</html>
+
